@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/03.css">
+    <link rel="stylesheet" href="css/rest.css">
+</head>
+<body>
+    <div class="container">
+        <header class="round"></header>
+
+        <main class="imgs">
+        <div class="gust">
+            <div class="left">
+            <span class="pend">?</span>
+            </div>
+            <p class="l-player">机器人</p>
+            <p class="cscore">胜：0 | 负：0</p>
+        </div>
+    
+        <div class="gust">
+            <div class="right">
+            <span class="pend">?</span>
+            </div>
+            <p class="r-player"></p>
+            <p class="myscore">胜：0 | 负：0</p>
+        </div>
+        </main>
+
+       <form class="begin">
+        <div class="beginname">
+           <label for="name"  class="formlabel">name</label>
+            <input type="text" class="name" id="name" required></input> 
+        </div>
+        <div class="beginround">
+          <label for="roundnum" class="formlabel">round</label>
+           <input type="number" class="roundnum"  id="roundnum" required></input>  
+        </div>
+        <div class="beginbtn">
+            <button class="beginbtn1" type="submit">确认</button>
+         </div>
+       </form>
+        <dialog class="next-round">
+            <form class="form-dialog" method="dialog">
+                <div class="formin">
+                <label>请选择要出的手势</label> 
+                <select class="select">
+                    <option value="0">布</option>
+                    <option value="1">剪刀</option>
+                    <option value="2">石头</option>
+                </select>
+                </div>
+                <div class="formin">
+                   <button class="confirm" type="submit">确认</button>
+                </div>
+            </form>
+        </dialog>
+        <footer class="footer">
+            <p class="win"></p>
+            <button class="show-btn0" >
+                开始游戏
+            </button>
+            <button class="show-btn" >
+             开始下一回合
+            </button>
+            <button class="show-btn1">
+                开始新回合
+            </button>
+            <p class="last-win"></p>
+       </footer>
+    </div>
+    <script src="03.js"></script>
+</body>
+</html>
